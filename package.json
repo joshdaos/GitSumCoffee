@@ -4,7 +4,9 @@
   "description": "project one collab",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "open http://localhost:7000 & nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,11 @@
     "coffee"
   ],
   "author": "Josh & Lesley",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.12.5"
+  }
 }
