@@ -1,0 +1,20 @@
+{
+  "name": "caffienators-project-one",
+  "version": "1.0.0",
+  "description": "project one collab",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/joshdaos/Caffienators-Project-One.git"
+  },
+  "keywords": [
+    "project-one",
+    "collabs",
+    "coffee"
+  ],
+  "author": "Josh & Lesley",
+  "license": "MIT"
+}

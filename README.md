@@ -1,5 +1,7 @@
 # GitSumCoffee
 
+# UserStory:
+
 ## Login Page:
 1. On home page, the user should be prompted to enter in their email address and password.
 2. The user will click on Login/Sign Up after entering in email address and password.
