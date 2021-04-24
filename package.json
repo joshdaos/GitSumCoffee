@@ -6,11 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-<<<<<<< HEAD
     "dev": "open http://localhost:7000 & nodemon server.js"
-=======
-    "dev": "open http://localhost:4000 && nodemon server.js",
->>>>>>> 7134f557fdd96c45d72aafe0c1d085caabe140dd
   },
   "repository": {
     "type": "git",
@@ -27,13 +23,8 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "method-override": "^3.0.0",
-<<<<<<< HEAD
-    "mongoose": "^5.12.5"
-=======
-    "mongo": "^0.1.0",
     "mongoose": "^5.12.5",
     "node": "^16.0.0",
     "nodemon": "^2.0.7"
->>>>>>> 7134f557fdd96c45d72aafe0c1d085caabe140dd
   }
 }
