@@ -23,9 +23,9 @@ app.use(express.urlencoded({ extended: true }));
 
 
 // home route
-// app.get("/", function (request, response){
-//     response.render("Home");
-// });
+app.get("/", function (request, response){
+    response.render("Home");
+});
 
 
 
