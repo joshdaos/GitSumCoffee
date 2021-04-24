@@ -23,7 +23,7 @@
 3. Writing a review on selected coffee.
 4. The coffee has a list of ratings (out of 5).
 
-# Userflow:
+# Userflow: 
 https://joshdaos986755.invisionapp.com/freehand/Project1-userflows-XZDtkNzf2
 
 # WireFrame:
@@ -32,25 +32,26 @@ https://lesleysauter291576.invisionapp.com/freehand/Freehand-Project-One-yTOqbGL
 
 
 
+
 MVP
 reverse engineering website: https://www.peets.com/
 
- # Key features:
-- 1. Login/sign up, email, password
+Key features:
+1. Login/sign up, email, password
 - if user doesn't sign up or login, they can continue as a guest
 
-- 2. view & choose coffee products, user gets an option to add to bag   with an "ADD TO BAG" button
+2. view & choose coffee products, user gets an option to add to bag   with an "ADD TO BAG" button
 
-- 3. user has a shopping bag to view what they've selected
+3. user has a shopping bag to view what they've selected
 - user is able to remove (delete) items from shopping bag and can decrease and increase quantity of items
 
-- 5. Admin will be able to delete a product item from the admin URL
+4. Admin will be able to delete a product item from the admin URL
 
-# Bonus feature:
-- choose quantity, choose bags of coffee
-- review coffee, rate with stars, comment on the coffee
+Bonus features:
+-choose quantity on view selected coffee product page before adding to card
+-review selected coffee product and rate with stars
 
-Crud
+Full Crud Functionality:
 C - creating an account 
 R - view selected coffee from best seller's page
 U - Update the quantity of items in bag
@@ -58,7 +59,7 @@ D - Remove product from the admin url
 
 Routes:
 Post - adding to bag and adding an account by signing up
-Put - update quantity of product and remove items from bag
+Put - updating quantity of product and removing items from bag
 Delete - admin deletes product items from admin url
-Show - view selected product items
-*/
+Show - user can view selected product items
+
