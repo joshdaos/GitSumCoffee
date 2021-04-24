@@ -33,10 +33,10 @@ https://lesleysauter291576.invisionapp.com/freehand/Freehand-Project-One-yTOqbGL
 
 
 
-MVP
+# MVP
 reverse engineering website: https://www.peets.com/
 
-Key features:
+## Key features:
 1. Login/sign up, email, password
 - if user doesn't sign up or login, they can continue as a guest
 
@@ -48,16 +48,16 @@ Key features:
 4. Admin will be able to delete a product item from the admin URL
 
 Bonus features:
--choose quantity on view selected coffee product page before adding to card
--review selected coffee product and rate with stars
+- choose quantity on view selected coffee product page before adding to card
+- review selected coffee product and rate with stars
 
-Full Crud Functionality:
+## Full Crud Functionality:
 C - creating an account 
 R - view selected coffee from best seller's page
 U - Update the quantity of items in bag
 D - Remove product from the admin url
 
-Routes:
+## Routes:
 Post - adding to bag and adding an account by signing up
 Put - updating quantity of product and removing items from bag
 Delete - admin deletes product items from admin url

@@ -1,6 +1,5 @@
 //external modules//
 const express = require("express");
-// const { allCereal } = require("./models");
 
 //internal modules// 
 // const db = require("./models");
