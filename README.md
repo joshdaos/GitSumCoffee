@@ -1,6 +1,6 @@
 # GitSumCoffee
 
-# UserStory:
+# User Stories:
 
 ## Login Page:
 1. On home page, the user should be prompted to enter in their email address and password.
