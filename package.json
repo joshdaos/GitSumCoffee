@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+<<<<<<< HEAD
     "dev": "open http://localhost:7000 & nodemon server.js"
+=======
+    "dev": "open http://localhost:7000 && nodemon server.js"s
+>>>>>>> 7ef369a33c7584fbe00258e6c984d40bf7ebdb56
   },
   "repository": {
     "type": "git",
