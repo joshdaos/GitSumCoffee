@@ -2,8 +2,8 @@
 const express = require("express");
 
 //internal modules// 
-// const db = require("./models");
-// const controllers = require("./controllers");
+const db = require("./models");
+const controllers = require("./controllers");
 
 //instanced modules//
 const app = express();
@@ -20,14 +20,11 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 
 // app.use(methodOverride("_method"));
+
 //controllers//
 // users contoller 
-app.use("/users", controllers.users);
-
-// home route
-app.get("/", function (request, response){
-    response.render("Home");
-});
+app.use("/products", controllers.products);
+app.use("/auth", controllers.auth);
 
 
 //server bind//
