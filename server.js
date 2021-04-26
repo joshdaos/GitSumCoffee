@@ -2,7 +2,7 @@
 const express = require("express");
 
 //internal modules// 
-const db = require("./models");
+// const db = require("./models");
 const controllers = require("./controllers");
 
 //instanced modules//
@@ -18,13 +18,16 @@ app.set("view engine", "ejs");
 
 //middleware//
 app.use(express.urlencoded({ extended: true }));
-
 // app.use(methodOverride("_method"));
 
 //controllers//
-// users contoller 
 app.use("/products", controllers.products);
 app.use("/auth", controllers.auth);
+
+// home route
+app.get("/", function (request, response){
+    response.render("Home");
+});
 
 
 //server bind//
