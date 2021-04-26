@@ -30,4 +30,5 @@ mongoose.connection.on("disconnected", function () {
 // exporting
 module.exports = {
     User: require("./User"),
+	Product: require("./Product"),
 };
