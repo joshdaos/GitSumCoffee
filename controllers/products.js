@@ -16,14 +16,18 @@ PATCH/PUT - update
 DELETE - destroy
 */
 
-//Page 2 for Best Sellers page
-router.get("/bestsellers", function (request, response){
-    response.render("products");
-});
+// Index
+router.get("/bestsellers", function (request, response) {
+	db.Product.find({}, function (err, allProducts) {
+		if (err) return response.send(err);
 
-//router.get("/viewcoffee", function(request, response) {
-//     response.render("")
-// });
+		const context = { products: allProducts };
+
+        response.send("Index");
+
+		response.render("products/index", context);
+	});
+});
 
 
 
