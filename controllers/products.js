@@ -17,7 +17,7 @@ DELETE - destroy
 */
 
 router.get("/bestsellers", function (request, response){
-    response.render("bestsellers");
+    response.render("products");
 });
 
 
