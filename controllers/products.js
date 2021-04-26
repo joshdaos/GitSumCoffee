@@ -16,6 +16,9 @@ PATCH/PUT - update
 DELETE - destroy
 */
 
+router.get("/bestsellers", function (request, response){
+    response.render("bestsellers");
+});
 
 
 
