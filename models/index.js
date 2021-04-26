@@ -1,18 +1,16 @@
 const mongoose = require("mongoose");
-//require mongoose
 
-//connecting mongodb
-const dbUrl = "mongodb://localhost:27017/blogdb";
+const dbURL = "mongodb://localhost:27017/blogdb";
 
-// connecting mongoose
 mongoose
-	.connect(dbUrl, {
-		useNewUrlParser: true,
-		useUnifiedTopology: true,
-		useCreateIndex: true,
-		useFindAndModify: false,
-	})
-	.then(function () {
+    .connect(dbURL, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
+        useFindAndModify: false
+    })
+
+    .then(function () {
 		console.log("MongoDB connected! ");
 	})
 	.catch(function (err) {
