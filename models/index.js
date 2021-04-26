@@ -10,6 +10,23 @@ mongoose
         useFindAndModify: false
     })
 
+    .then(function () {
+		console.log("MongoDB connected! ");
+	})
+	.catch(function (err) {
+		console.log("MongoDB error.. ");
+		console.log(err);
+	});
+
+mongoose.connection.on("disconnected", function () {
+	console.log("MongoDB disconnected.. ");
+});
+
+
+
+
+// exporting
 module.exports = {
-    Products: require("./Products")
+    User: require("./User"),
+    Products: require("./Products"),
 };

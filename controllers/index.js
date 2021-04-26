@@ -1,3 +1,4 @@
-module.exports = {
-    products: require("./products"),
+// exporting users
+ module.exports = {
+    users: require("./users"),
 };
