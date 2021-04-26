@@ -3,7 +3,7 @@ const express = require("express");
 
 //internal modules// 
 // const db = require("./models");
-// const controllers = require("./controllers");
+const controllers = require("./controllers");
 
 //instanced modules//
 const app = express();
