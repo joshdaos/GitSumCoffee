@@ -23,6 +23,7 @@ router.get("/bestsellers", function (request, response) {
 
 		const context = { products: allProducts };
 
+        // response.send("is this working?");
 
 		response.render("products/index", context);
 	});
