@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/products", controllers.products);
 app.use("/auth", controllers.auth);
 
-// home route
+//Index route
 app.get("/", function (request, response){
     response.render("Home");
 });
