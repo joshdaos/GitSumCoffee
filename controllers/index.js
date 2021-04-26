@@ -1,4 +1,5 @@
 // exporting users
  module.exports = {
-    users: require("./users"),
+    users: require("./auth"),
+    products: require("./products"),
 };

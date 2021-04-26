@@ -21,7 +21,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // app.use(methodOverride("_method"));
 //controllers//
-
+// users contoller 
+app.use("/users", controllers.users);
 
 // home route
 app.get("/", function (request, response){

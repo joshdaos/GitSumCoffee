@@ -28,5 +28,9 @@ mongoose.connection.on("disconnected", function () {
 // exporting
 module.exports = {
     User: require("./User"),
+<<<<<<< HEAD
     Products: require("./Products"),
+=======
+	Product: require("./Product"),
+>>>>>>> 1afd4e60b9d06d104c5acbaa5d37932b7a2503fd
 };
