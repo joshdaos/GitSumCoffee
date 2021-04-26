@@ -16,10 +16,10 @@ PATCH/PUT - update
 DELETE - destroy
 */
 
-// home route
-router.get("/", function (request, response){
-    response.render("Home");
-});
+// index route
+// router.get("/", function (request, response){
+//     response.render("Home");
+// });
 
 
 
