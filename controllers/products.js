@@ -29,7 +29,8 @@ router.get("/bestsellers", function (request, response) {
 	});
 });
 
- router.get("/:id", function(request, response) {
+// Show 
+router.get("/:id", function(request, response) {
         db.Product.findById(request.params.id)
         .populate("product");
         db.Product.findById()
@@ -40,7 +41,7 @@ router.get("/bestsellers", function (request, response) {
         response.render("products/show", context);
 
     });
- });
+});
 
 
 
