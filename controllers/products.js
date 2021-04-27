@@ -30,15 +30,14 @@ router.get("/bestsellers", function (request, response) {
 
 
 //Show Selected Coffee Route
- router.get("/:id", function(request, response) {
+router.get("/:id", function(request, response) {
         db.Product.findById(request.params.id)
         .exec(function (err, foundProduct) {
-       
-        if (err) return response.send(err);
 
+        if (err) return response.send(err);
+        
         const context = { product: foundProduct };
         response.render("products/show", context);
-
     });
 });
 
