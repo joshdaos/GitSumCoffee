@@ -9,6 +9,7 @@ const db = require("../models");
 const { response } = require("express");
 const { request } = require("../server");
 
+
 /* RESTFUL ROUTES
 URL // HTTP // ACTION
 GET - index
@@ -24,6 +25,7 @@ DELETE - destroy
 router.get("/signup", function (request, response){
     response.render("auth/signup");
 });
+
 
 router.post("/signup", async function(request,response){
     try {

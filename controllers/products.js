@@ -5,32 +5,32 @@ const router = express.Router();
 // internal modules (database)
 const db = require("../models");
 
-/* RESTFUL ROUTES
-URL // HTTP // ACTION
-GET - index
-GET - new
-POST - create
-GET - show 
-GET - edit 
-PATCH/PUT - update
-DELETE - destroy
-*/
+// Rest Routes
+/*
+ * Index - GET - /authors  - Presentational - respond with all authors
+ * New - GET - /authors/new  - Presentational Form - a page with a form to create a new author
+ * Show - GET - /authors/:id  - Presentational - respond with specific author by id
+ * Create - Post - /authors  - Functional - recieve data from new route to create a author
+ * Edit - GET - /authors/:id/edit  - Presentational Form - respond with a form prefilled with author data
+ * Update - PUT - /authors/:id  - Functional - recieve data from edit to update a specific author
+ * Delete - DELETE - /authors/:id  - Functional - Deletes author by id from request
+ */
 
-// Index
+
+// Index Best Selling Coffee Route
 router.get("/bestsellers", function (request, response) {
 	db.Product.find({}, function (err, allProducts) {
 		if (err) return response.send(err);
 
 		const context = { products: allProducts };
 
-        // response.send("is this working?");
-
 		response.render("products/index", context);
 	});
 });
 
-// Show 
-router.get("/:id", function(request, response) {
+
+//Show Selected Coffee Route
+ router.get("/:id", function(request, response) {
         db.Product.findById(request.params.id)
         .populate("product");
         db.Product.findById()
@@ -42,6 +42,10 @@ router.get("/:id", function(request, response) {
 
     });
 });
+
+ 
+
+
 
 
 

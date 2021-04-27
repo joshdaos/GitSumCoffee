@@ -1,8 +1,10 @@
 //external modules//
 const express = require("express");
+
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const methodOverride = require("method-override");
+
 
 //internal modules// 
 // const db = require("./models");
@@ -12,7 +14,8 @@ const controllers = require("./controllers");
 const app = express();
 
 //configuration var//
-
+//require('dotenv').config();
+//const PORT = process.env.PORT || 7000;
 const PORT = 7000;
 
 //app config//
@@ -21,6 +24,7 @@ app.set("view engine", "ejs");
 
 //middleware//
 app.use(express.urlencoded({ extended: true }));
+
 
 app.use(methodOverride("_method"));
 
@@ -33,6 +37,7 @@ app.use(session({
 		maxAge: 1000 * 60 * 60 * 24 * 7 * 2 
 	}
 }));
+
 
 //controllers//
 app.use("/products", controllers.products);
