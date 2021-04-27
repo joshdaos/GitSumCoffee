@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 // adding session
 app.use(session({
-	store: MongoStore.create({ mongoUrl: "mongodb://localhost:27017/blogdb"}),
+	store: MongoStore.create({ mongoUrl: "mongodb://localhost:27017/coffeedb"}),
 	secret: "Super Secret Coffee",
 	resave: false,
 	saveUninitialized: false,
