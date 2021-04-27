@@ -1,5 +1,6 @@
 //external modules//
 const express = require("express");
+// app.use(methodOverride("_method"));
 //const session = require("express-session");
 //const MongoStore = require("connect-mongo");
 
@@ -11,7 +12,8 @@ const controllers = require("./controllers");
 const app = express();
 
 //configuration var//
-
+//require('dotenv').config();
+//const PORT = process.env.PORT || 7000;
 const PORT = 7000;
 
 //app config//
@@ -20,7 +22,6 @@ app.set("view engine", "ejs");
 
 //middleware//
 app.use(express.urlencoded({ extended: true }));
-// app.use(methodOverride("_method"));
 
 //controllers//
 app.use("/products", controllers.products);
