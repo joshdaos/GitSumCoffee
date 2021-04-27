@@ -43,17 +43,17 @@ app.use(function(request,response,next){
 	next();
 });
 // adding authRequired
-const authRequired = function(request,response,next){
-	if(request.session.currentUser){
-		return next();
-	}
+// const authRequired = function(request,response,next){
+// 	if(request.session.currentUser){
+// 		return next();
+// 	}
 
-	return response.redirect("/login");
-};
+// 	return response.redirect("/login");
+// };
 
 //controllers//
-app.use("/products", authRequired, controllers.products);
-app.use("/", authRequired, controllers.auth);
+app.use("/products", controllers.products);
+app.use("/", controllers.auth);
 
 //Index route
 app.get("/", function (request, response){

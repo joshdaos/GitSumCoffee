@@ -43,7 +43,7 @@ router.post("/signup", async function(request,response){
     request.body.password = hash;
   
       // create user in database
-    const newUser = await db.User.create(req.body);
+    const newUser = await db.User.create(request.body);
     
     return response.redirect("/login");
   
