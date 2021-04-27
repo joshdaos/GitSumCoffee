@@ -29,7 +29,7 @@ const products = [
 const run = async function run() {
     try {
         await db.Product.deleteMany({});
-        const createdProducts = await db.Product.insertMany(authors);
+        const createdProducts = await db.Product.insertMany(products);
 
         console.log("Seed finished");
         process.exit();
