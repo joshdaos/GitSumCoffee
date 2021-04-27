@@ -29,8 +29,6 @@ router.get("/bestsellers", function (request, response) {
 });
 
 
-
-
 //Show Selected Coffee Route
  router.get("/:id", function(request, response) {
         db.Product.findById(request.params.id)

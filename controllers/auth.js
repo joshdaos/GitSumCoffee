@@ -6,8 +6,7 @@ const router = express.Router();
 const bcrypt = require("bcryptjs");
 // internal modules (database)
 const db = require("../models");
-const { response } = require("express");
-const { request } = require("../server");
+
 
 /* RESTFUL ROUTES
 URL // HTTP // ACTION
