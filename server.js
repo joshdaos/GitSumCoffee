@@ -23,10 +23,11 @@ const PORT = 7000;
 app.set("view engine", "ejs");
 
 //middleware//
+// adding urlencoded
 app.use(express.urlencoded({ extended: true }));
-
+// adding method-override
 app.use(methodOverride("_method"));
-
+// adding session
 app.use(session({
 	store: MongoStore.create({ mongoUrl: "mongodb://localhost:27017/blogdb"}),
 	secret: "Super Secret Coffee",
@@ -36,10 +37,23 @@ app.use(session({
 		maxAge: 1000 * 60 * 60 * 24 * 7 * 2 
 	}
 }));
+// adding credetnitals to ejs
+app.use(function(request,response,next){
+	app.locals.user = request.session.currentUser;
+	next();
+});
+// adding authRequired
+const authRequired = function(request,response,next){
+	if(request.session.currentUser){
+		return next();
+	}
+
+	return response.redirect("/login");
+};
 
 //controllers//
-app.use("/products", controllers.products);
-app.use("/", controllers.auth);
+app.use("/products", authRequired, controllers.products);
+app.use("/", authRequired, controllers.auth);
 
 //Index route
 app.get("/", function (request, response){
