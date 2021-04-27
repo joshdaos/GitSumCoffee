@@ -25,7 +25,6 @@ app.set("view engine", "ejs");
 //middleware//
 app.use(express.urlencoded({ extended: true }));
 
-
 app.use(methodOverride("_method"));
 
 app.use(session({
@@ -37,7 +36,6 @@ app.use(session({
 		maxAge: 1000 * 60 * 60 * 24 * 7 * 2 
 	}
 }));
-
 
 //controllers//
 app.use("/products", controllers.products);

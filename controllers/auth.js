@@ -6,8 +6,6 @@ const router = express.Router();
 const bcrypt = require("bcryptjs");
 // internal modules (database)
 const db = require("../models");
-const { response } = require("express");
-const { request } = require("../server");
 
 
 /* RESTFUL ROUTES
@@ -25,7 +23,6 @@ DELETE - destroy
 router.get("/signup", function (request, response){
     response.render("auth/signup");
 });
-
 
 router.post("/signup", async function(request,response){
     try {
