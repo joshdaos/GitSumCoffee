@@ -42,6 +42,7 @@ app.use(function(request,response,next){
 	app.locals.user = request.session.currentUser;
 	next();
 });
+
 // adding authRequired
 // const authRequired = function(request,response,next){
 // 	if(request.session.currentUser){
