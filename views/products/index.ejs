@@ -10,12 +10,11 @@
     <h1>Best Selling Coffee</h1>
     <a href="/">Home</a>
     <a href="/products/bestsellers">Best Sellers</a>
+
     <ul>
-        <li>Git Las Hermanas <a href="/products/:id">View Coffee</a></li>
-        <li>Git Italian Roast <a href="/products/:id">View Coffee</a></li>
-        <li>Git House Blend <a href="/products/:id">View Coffee</a></li>
-        <li>Git Lit Espresso <a href="/products/:id">View Coffee</a></li>
-    
+        <% products.forEach ( product => { %>
+        <li><%= product.name %><a href="/products/:id <%= product._id %>">View Coffee</a></li>
+        <% }) %>
     </ul>
 </body>
 </html>
