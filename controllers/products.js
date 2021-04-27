@@ -32,9 +32,8 @@ router.get("/bestsellers", function (request, response) {
 //Show Selected Coffee Route
  router.get("/:id", function(request, response) {
         db.Product.findById(request.params.id)
-        .populate("product");
-        db.Product.findById()
-        .exec(function (err, foundArticle) {
+        .exec(function (err, foundProduct) {
+       
         if (err) return response.send(err);
 
         const context = { product: foundProduct };
