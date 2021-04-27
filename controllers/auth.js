@@ -23,7 +23,17 @@ router.get("/signup", function (request, response){
     response.render("auth/signup");
 });
 
-
+router.post("/signup", async function(req,res){
+    res.send(req.body);
+  });
+  
+  router.get("/login",function(req,res){
+    res.render("auth/login");
+  });
+  
+  router.post("/login", async function(req,res){
+    res.send(req.body);
+  });
 
 
 

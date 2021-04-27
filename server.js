@@ -1,5 +1,8 @@
 //external modules//
 const express = require("express");
+const session = require("express-session");
+const MongoStore = require("connect-mongo");
+const methodOverride = require("method-override");
 
 //internal modules// 
 // const db = require("./models");
@@ -18,11 +21,22 @@ app.set("view engine", "ejs");
 
 //middleware//
 app.use(express.urlencoded({ extended: true }));
-// app.use(methodOverride("_method"));
+
+app.use(methodOverride("_method"));
+
+app.use(session({
+	store: MongoStore.create({ mongoUrl: "mongodb://localhost:27017/blogdb"}),
+	secret: "Super Secret Coffee",
+	resave: false,
+	saveUninitialized: false,
+	cookie: {
+		maxAge: 1000 * 60 * 60 * 24 * 7 * 2 
+	}
+}));
 
 //controllers//
 app.use("/products", controllers.products);
-app.use("/auth", controllers.auth);
+app.use("/", controllers.auth);
 
 //Index route
 app.get("/", function (request, response){
