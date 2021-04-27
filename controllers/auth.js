@@ -59,8 +59,35 @@ router.get("/login",function(request,response){
     response.render("auth/login");
 });
   
-  router.post("/login", async function(request,response){
-    response.send(request.body);
+router.post("/login", async function(request,response){
+    try {
+     // check if the user exists 
+     const foundUser = await db.User.findOne({email: request.body.email});
+     // if not
+       // redirect to register
+    if(!foundUser) return response.redirect("/signup");
+  
+    // if the user exists
+      // validate the user if passwords match -> login 
+      // .compare(body password, hashed password) => return true or false
+    const match = await bcrypt.compare(request.body.password, foundUser.password);
+  
+    // if not match send error
+    if(!match) return response.send("password invalid");
+  
+    // if match create the session and redirect to home\
+    // here we have created the key card
+    request.session.currentUser = {
+      id: foundUser._id,
+    //   username: foundUser.username
+    }
+    
+    return res.redirect("/");
+  
+    } catch(err) {
+      console.log(err);
+      response.send(err);
+    }
 });
 
 
