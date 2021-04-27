@@ -14,7 +14,7 @@ const controllers = require("./controllers");
 const app = express();
 
 //configuration var//
-//require('dotenv').config();
+require('dotenv').config();
 //const PORT = process.env.PORT || 7000;
 const PORT = 7000;
 
@@ -29,8 +29,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 // adding session
 app.use(session({
-	store: MongoStore.create({ mongoUrl: "mongodb://localhost:27017/coffeedb"}),
-	secret: "Super Secret Coffee",
+	store: MongoStore.create({ mongoUrl: process.env.MONGO_URI}),
+	secret: process.env.SESSION_SECRET,
 	resave: false,
 	saveUninitialized: false,
 	cookie: {

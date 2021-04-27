@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-//require('dotenv').config();
-//const dbUrl = process.env.MONGO_URI;
-const dbURL = "mongodb://localhost:27017/coffeedb";
+require('dotenv').config();
+const dbURL = process.env.MONGO_URI;
+
 
 mongoose
     .connect(dbURL, {
