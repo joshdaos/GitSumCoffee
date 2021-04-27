@@ -10,10 +10,10 @@
     <h1>Best Selling Coffee</h1>
     <a href="/">Home</a>
     
-
     <ul>
         <% products.forEach ( product => { %>
-        <li><%= product.name %> <img src='<%= product.image %>'alt="circle" width="300px" height="300px"><a href="/products/:id <%= product._id %>">View Coffee</a></li>
+        <li><%= product.name %> <img src='<%= product.image %>'alt="circle" width="300px" height="300px">
+            <a href="/products/<%= product._id %>">View Coffee</a></li>
         <% }) %>
     </ul>
 </body>
