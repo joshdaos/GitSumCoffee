@@ -25,3 +25,17 @@ const products = [
     price: 21.99
 }
 ];
+
+const run = async function run() {
+    try {
+        await db.Product.deleteMany({});
+        const createdProducts = await db.Product.insertMany(authors);
+
+        console.log("Seed finished");
+        process.exit();
+    } catch (err) {
+        console.log(err);
+        process.exit();
+    }
+};
+
