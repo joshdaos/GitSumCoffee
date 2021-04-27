@@ -2,6 +2,8 @@
 const express = require("express");
 // set up router
 const router = express.Router();
+// require bcrypt
+const bcrypt = require("bcryptjs");
 // internal modules (database)
 const db = require("../models");
 
@@ -17,9 +19,9 @@ DELETE - destroy
 */
 
 // index route
-// router.get("/", function (request, response){
-//     response.render("Home");
-// });
+router.get("/signup", function (request, response){
+    response.render("auth/signup");
+});
 
 
 
