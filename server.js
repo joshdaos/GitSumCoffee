@@ -75,6 +75,19 @@ app.get("/admin", function (request, response) {
 	});
 });
 
+// Cart Route
+
+app.get("/cart", function (request, response) {
+
+    db.User.findById(request.session.currentUser.id)
+      .populate("cart")
+      .exec(function (err, foundUser) {
+        if (err) return response.send(err);
+  
+        const context = { products: foundUser.cart };
+        return response.render("products/cart", context);
+      });
+});
 
 //server bind//
 app.listen(PORT, function () {
