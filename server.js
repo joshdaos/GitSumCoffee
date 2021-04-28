@@ -9,6 +9,7 @@ const methodOverride = require("method-override");
 //internal modules// 
 // const db = require("./models");
 const controllers = require("./controllers");
+const { response } = require("express");
 
 //instanced modules//
 const app = express();
@@ -43,14 +44,14 @@ app.use(function(request,response,next){
 	next();
 });
 
-// adding authRequired
-// const authRequired = function(request,response,next){
-// 	if(request.session.currentUser){
-// 		return next();
-// 	}
+//adding authRequired
+const authRequired = function(request,response,next){
+	if(request.session.currentUser){
+		return next();
+	}
 
-// 	return response.redirect("/login");
-// };
+	return response.redirect("/login");
+};
 
 //controllers//
 app.use("/products", controllers.products);
@@ -59,6 +60,12 @@ app.use("/", controllers.auth);
 //Index route
 app.get("/", function (request, response){
     response.render("Home");
+});
+
+//Admin 
+
+app.get("/admin", function (request, response) {
+	response.render("admin");
 });
 
 
