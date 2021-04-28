@@ -42,10 +42,14 @@ router.get("/:id", function(request, response) {
 });
 
 //===== Cart Routes =====//
-// show route 
-router.get("/cart", function(request, response){
-    response.send("Cart");
-});
+// Edit Route
+router.put("/cart/:userId/:productId", async function(request,response){
+    await db.User.findByIdAndUpdate(
+    request.params.userId, 
+    { $push: { cart: request.params.productId } }
+);
+response.redirect("products/cart");
+})
 
 
 
