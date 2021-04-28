@@ -7,6 +7,7 @@ const userSchema = new mongoose.Schema(
     {
         email: {type: String, required: [true, "Please Provide An Email"], unique: true},
         password: {type: String, required: [true, "Please Provide A Password"], unique: true },
+        cart: [{ type: mongoose.Schema.Types.ObjectId, ref: "Product" }], //array of products, products need to be stored once added
     },
     {
         timestamp: true
