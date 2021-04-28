@@ -1,20 +1,31 @@
+/* 
+#314e52 - dark green
+#f2a154 - orange
+#f7f6e7 - cream
+#e7e6e1 - gray
+*/
 * {
 	box-sizing: border-box;
 }
 body {
 	margin: 0;
 	padding: 0;
-	background-color: rgb(255, 211, 146);
+	background-color: #f7f6e7;
 	text-align: center;
 }
 
 h1 {
 	font-family: 'Dancing Script', cursive;
+	background-color: #e7e6e1;
+	color: #314e52;
+	font-size: 35px;
+	text-align:left;
 }
 
-a {
+a, div {
 	font-family: 'Nunito', sans-serif;
 	font-size: 15px;
+	background-color: #f2a154;
 }
 
 input {
