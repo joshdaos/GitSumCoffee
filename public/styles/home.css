@@ -7,3 +7,18 @@ body {
 	background-color: rgb(255, 211, 146);
 	text-align: center;
 }
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+}
+
+a {
+	font-family: 'Nunito', sans-serif;
+	font-size: 15px;
+}
+
+input {
+	font-family: 'Nunito', sans-serif;
+	font-size: 15px;
+}
+
