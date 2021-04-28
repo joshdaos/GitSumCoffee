@@ -44,14 +44,14 @@ app.use(function(request,response,next){
 	next();
 });
 
-// adding authRequired
-// const authRequired = function(request,response,next){
-// 	if(request.session.currentUser){
-// 		return next();
-// 	}
+//adding authRequired
+const authRequired = function(request,response,next){
+	if(request.session.currentUser){
+		return next();
+	}
 
-// 	return response.redirect("/login");
-// };
+	return response.redirect("/login");
+};
 
 //controllers//
 app.use("/products", controllers.products);
@@ -62,7 +62,7 @@ app.get("/", function (request, response){
     response.render("Home");
 });
 
-//Admin route
+//Admin 
 
 app.get("/admin", function (request, response) {
 	response.render("admin");
