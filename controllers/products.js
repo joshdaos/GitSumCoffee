@@ -42,22 +42,23 @@ router.get("/:id", function(request, response) {
 });
 
 //===== Admin Routes =====//
-// trying to get info on db to view
-// router.get("/admin", function (request, response) {
-// 	db.Product.find({}, function (err, allProducts) {
-// 		if (err) return response.send(err);
-
-// 		const context = { products: allProducts };
-
-// 		response.render("products/admin", context);
-// 	});
-// });
+// needs a delete route to remove products
 
 
 //===== Cart Routes =====//
-// create a route 
+// show route
 
+router.get("/cart/:productId", function (request, response) {
 
+    db.Product.findById(request.session.currentUser.id)
+      .populate("products")
+      .exec(function (err, foundProduct) {
+        if (err) return response.send(err);
+  
+        const context = { product: foundProduct };
+        return response.render("products/show", context);
+      });
+});
 
 
 
