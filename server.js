@@ -66,9 +66,9 @@ app.get("/", function (request, response){
 
 //Admin 
 
-app.get("/admin", function (request, response) {
-	response.render("admin");
-});
+// app.get("/admin", function (request, response) {
+// 	response.render("admin");
+// });
 
 
 //server bind//
