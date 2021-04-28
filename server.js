@@ -7,9 +7,9 @@ const methodOverride = require("method-override");
 
 
 //internal modules// 
-// const db = require("./models");
+const db = require("./models");
+
 const controllers = require("./controllers");
-const { response } = require("express");
 
 //instanced modules//
 const app = express();
@@ -59,17 +59,22 @@ const authRequired = function(request,response,next){
 app.use("/products", controllers.products);
 app.use("/", controllers.auth);
 
-//Index route
+//Home page route
 app.get("/", function (request, response){
     response.render("Home");
 });
 
-//Admin 
+//Admin route
 
-// app.get("/admin", function (request, response) {
-// 	response.render("admin");
-// });
+app.get("/admin", function (request, response) {
+	db.Product.find({}, function (err, allProducts) {
+		if (err) return response.send(err);
 
+		const context = { products: allProducts };
+
+		response.render("products/admin", context);
+	});
+});
 
 //server bind//
 app.listen(PORT, function () {

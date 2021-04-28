@@ -43,30 +43,35 @@ router.get("/:id", function(request, response) {
 
 //===== Admin Routes =====//
 // trying to get info on db to view
-router.get("/admin", function (request, response) {
-	db.Product.find({}, function (err, allProducts) {
-		if (err) return response.send(err);
+// router.get("/admin", function (request, response) {
+// 	db.Product.find({}, function (err, allProducts) {
+// 		if (err) return response.send(err);
 
-		const context = { products: allProducts };
+// 		const context = { products: allProducts };
 
-		response.render("products/admin", context);
-	});
-});
+// 		response.render("products/admin", context);
+// 	});
+// });
 
 
 //===== Cart Routes =====//
+// create a route 
+
+
+
+
+
+
+
 // Edit Route
 // trying to edit my cart
-router.put("/cart/:userId/:productId", async function(request,response){
+router.put("/cart/:productId", async function(request,response){
     await db.User.findByIdAndUpdate(
-    request.params.userId, 
+    request.session.currentUser.id, 
     { $push: { cart: request.params.productId } }
 );
 response.redirect("products/cart");
 })
-
-
-
 
 
 // exports
