@@ -55,7 +55,7 @@ run();
 const guest = async function guest() {
     try {
         await db.User.deleteMany({});
-        const createdGuestUser = await db.User.insertMany(user);
+        const createdGuestUser = await db.User.insertMany(guestUser);
 
         console.log("Seed finished");
         process.exit();
@@ -64,6 +64,8 @@ const guest = async function guest() {
         process.exit();
     }
 };
+
+guest();
 
 
 
