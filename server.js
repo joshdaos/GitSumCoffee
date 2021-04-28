@@ -9,6 +9,7 @@ const methodOverride = require("method-override");
 //internal modules// 
 // const db = require("./models");
 const controllers = require("./controllers");
+const { response } = require("express");
 
 //instanced modules//
 const app = express();
@@ -59,6 +60,12 @@ app.use("/", controllers.auth);
 //Index route
 app.get("/", function (request, response){
     response.render("Home");
+});
+
+//Admin route
+
+app.get("/admin", function (request, response) {
+	response.render("admin");
 });
 
 
