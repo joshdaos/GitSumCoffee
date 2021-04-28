@@ -43,36 +43,35 @@ router.get("/:id", function(request, response) {
 
 //===== Admin Routes =====//
 // needs a delete route to remove products
-
-
-//===== Cart Routes =====//
-// show route
-
-router.get("/cart/:productId", function (request, response) {
-
-    db.Product.findById(request.session.currentUser.id)
-      .populate("products")
-      .exec(function (err, foundProduct) {
-        if (err) return response.send(err);
-  
-        const context = { product: foundProduct };
-        return response.render("products/show", context);
-      });
+router.delete("/:id", function (req, res) {
+	const id = req.params.id;
+	// mongoose .delete (id, function (err, data))
+	db.Product.findByIdAndDelete(id, function (err, deletedProduct) {
+		if (err) {
+			console.log(err);
+			return res.send("Server Error :(");
+		} else {
+			console.log(deletedProduct);
+			return res.redirect("/admin");
+		}
+	});
 });
 
-
-
-
+//===== Cart Routes =====//
 
 // Edit Route
 // trying to edit my cart
-router.put("/cart/:productId", async function(request,response){
+router.put("/:productId/cart", async function(request,response){
+    try {
     await db.User.findByIdAndUpdate(
     request.session.currentUser.id, 
     { $push: { cart: request.params.productId } }
 );
-response.redirect("products/cart");
-})
+response.redirect("/cart");
+    } catch (err){
+        console.log(err);
+    }
+});
 
 
 // exports
