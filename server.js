@@ -28,6 +28,8 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 // adding method-override
 app.use(methodOverride("_method"));
+// allows us to have a public folder with styles->main.css
+app.use(express.static(__dirname + "/public"));
 // adding session
 app.use(session({
 	store: MongoStore.create({ mongoUrl: process.env.MONGO_URI}),
