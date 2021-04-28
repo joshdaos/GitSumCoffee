@@ -40,7 +40,7 @@ reverse engineering website: https://www.peets.com/
 1. Login/sign up, email, password
 - if user doesn't sign up or login, they can continue as a guest
 
-2. view & choose coffee products, user gets an option to add to bag   with an "ADD TO BAG" button
+2. view & choose coffee products, user gets an option to add to bag with an "ADD TO BAG" button
 
 3. user has a shopping bag to view what they've selected
 - user is able to remove (delete) items from shopping bag and can decrease and increase quantity of items

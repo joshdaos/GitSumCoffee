@@ -41,6 +41,19 @@ router.get("/:id", function(request, response) {
     });
 });
 
+//===== Admin Routes =====//
+
+router.get("/admin", function (request, response) {
+	db.Product.find({}, function (err, allProducts) {
+		if (err) return response.send(err);
+
+		const context = { products: allProducts };
+
+		response.render("products/admin", context);
+	});
+});
+
+
 //===== Cart Routes =====//
 // Edit Route
 router.put("/cart/:userId/:productId", async function(request,response){
