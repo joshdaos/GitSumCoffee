@@ -35,14 +35,17 @@ router.get("/:id", function(request, response) {
         .exec(function (err, foundProduct) {
 
         if (err) return response.send(err);
-        
+
         const context = { product: foundProduct };
         response.render("products/show", context);
     });
 });
 
- 
-
+//===== Cart Routes =====//
+// show route 
+router.get("/cart", function(request, response){
+    response.send("Cart");
+});
 
 
 
