@@ -9,7 +9,6 @@ const methodOverride = require("method-override");
 //internal modules// 
 // const db = require("./models");
 const controllers = require("./controllers");
-const { response } = require("express");
 
 //instanced modules//
 const app = express();
@@ -20,7 +19,6 @@ require('dotenv').config();
 const PORT = 7000;
 
 //app config//
-
 app.set("view engine", "ejs");
 
 //middleware//
