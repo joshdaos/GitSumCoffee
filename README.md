@@ -14,7 +14,7 @@
 ## Selected Coffee Page:
 1. The user will be directed to the page where they can view the selected coffee of their choice from the Best Sellers page.
 2. This page will display information about the coffee and allow the user to choose to add it to their cart.
-## Checkout Bag:
+## Cart:
 1. User is able to conclude their decision whether to buy or remove coffee from cart.
 2. User is able to press the remove button to remove coffee from cart.
 ## Bonus features:
@@ -28,8 +28,6 @@ https://joshdaos986755.invisionapp.com/freehand/Project1-userflows-XZDtkNzf2
 
 # WireFrame:
 https://lesleysauter291576.invisionapp.com/freehand/Freehand-Project-One-yTOqbGL23?frame-cb=1619223319359
-
-
 
 
 

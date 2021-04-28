@@ -32,7 +32,7 @@ const products = [
 const guestUser =  {
         email: "guestuser",
         password: "test1234",
-    }
+}
 
 
 const run = async function run() {
