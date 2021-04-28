@@ -31,8 +31,6 @@ https://lesleysauter291576.invisionapp.com/freehand/Freehand-Project-One-yTOqbGL
 
 
 
-
-
 # MVP
 reverse engineering website: https://www.peets.com/
 
