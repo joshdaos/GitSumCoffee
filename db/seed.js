@@ -26,6 +26,15 @@ const products = [
 }
 ];
 
+const guestUser = [
+    {
+        email: "guestuser",
+        password: "test1234",
+        cart: [{ type: mongoose.Schema.Types.ObjectId, ref: "Product" }]
+
+    }
+]
+
 const run = async function run() {
     try {
         await db.Product.deleteMany({});
@@ -40,4 +49,20 @@ const run = async function run() {
 };
 
 run();
+
+const guest = async function guest() {
+    try {
+        await db.User.deleteMany({});
+        const createdGuestUser = await db.User.insertMany(user);
+
+        console.log("Seed finished");
+        process.exit();
+    } catch (err) {
+        console.log(err);
+        process.exit();
+    }
+};
+
+guest();
+
 
