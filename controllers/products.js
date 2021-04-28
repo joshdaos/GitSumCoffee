@@ -42,7 +42,7 @@ router.get("/:id", function(request, response) {
 });
 
 //===== Admin Routes =====//
-
+// trying to get info on db to view
 router.get("/admin", function (request, response) {
 	db.Product.find({}, function (err, allProducts) {
 		if (err) return response.send(err);
@@ -56,6 +56,7 @@ router.get("/admin", function (request, response) {
 
 //===== Cart Routes =====//
 // Edit Route
+// trying to edit my cart
 router.put("/cart/:userId/:productId", async function(request,response){
     await db.User.findByIdAndUpdate(
     request.params.userId, 
