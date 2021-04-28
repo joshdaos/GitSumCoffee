@@ -81,7 +81,7 @@ router.post("/login", async function(request,response){
     //   username: foundUser.username
     }
     
-    return response.redirect("/");
+    return response.redirect("/products/bestsellers");
   
     } catch(err) {
       console.log(err);
