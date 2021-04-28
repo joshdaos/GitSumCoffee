@@ -33,7 +33,7 @@ const guestUser = [
         cart: [{ type: mongoose.Schema.Types.ObjectId, ref: "Product" }]
 
     }
-]
+];
 
 
 

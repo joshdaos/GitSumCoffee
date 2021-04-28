@@ -73,6 +73,12 @@ response.redirect("/cart");
     }
 });
 
+// Delete Route
+// removing an item from cart (array)
+
+
+
+
 
 // exports
 module.exports = router;
