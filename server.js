@@ -20,7 +20,6 @@ require('dotenv').config();
 const PORT = 7000;
 
 //app config//
-
 app.set("view engine", "ejs");
 
 //middleware//
