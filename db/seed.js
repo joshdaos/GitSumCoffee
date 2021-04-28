@@ -1,4 +1,5 @@
 const db = require("../models");
+const bcrypt = require("bcryptjs");
 
 const products = [
     { name: "Git Las Hermanas",
@@ -26,46 +27,34 @@ const products = [
 }
 ];
 
-const guestUser = [
-    {
+
+
+const guestUser =  {
         email: "guestuser",
         password: "test1234",
-        cart: [{ type: mongoose.Schema.Types.ObjectId, ref: "Product" }]
-
     }
-];
-
 
 
 const run = async function run() {
     try {
         await db.Product.deleteMany({});
+        await db.User.deleteMany({});
         const createdProducts = await db.Product.insertMany(products);
+        const salt = await bcrypt.genSalt(10);
+        const hash = await bcrypt.hash(guestUser.password, salt);
+        guestUser.password = hash
+        const createdGuestUser = await db.User.create(guestUser);
+        
 
         console.log("Seed finished");
         process.exit();
     } catch (err) {
         console.log(err);
-        process.exit();
     }
 };
 
 run();
 
-const guest = async function guest() {
-    try {
-        await db.User.deleteMany({});
-        const createdGuestUser = await db.User.insertMany(guestUser);
-
-        console.log("Seed finished");
-        process.exit();
-    } catch (err) {
-        console.log(err);
-        process.exit();
-    }
-};
-
-guest();
 
 
 

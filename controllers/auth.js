@@ -85,6 +85,14 @@ router.post("/login", async function(request,response){
     }
 });
 
+//Continue as Guest Route
+router.get("/guest", function (request, response) {
+    
+    response.redirect("/products/bestsellers");
+});
+
+
+
 
 
 
