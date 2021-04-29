@@ -16,21 +16,29 @@ body {
 	background-color: #f7f6e7;
 }
 
-h1 {
-	font-family: 'Dancing Script', cursive;
+h2 {
+	font-family: 'Nunito', sans-serif;
 	color: #314e52;
-	background-color: #e7e6e1;
-	border-bottom: 5px solid #314e52;
+	text-align:left;
 }
 
 a {
 	font-family: 'Nunito', sans-serif;
 	font-size: 15px;
+	padding: 10px;
 }
 
 li {
 	font-family: 'Nunito', sans-serif;
 	font-size: 15px;
 	list-style: none;
-	
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	background-color: #e7e6e1;
+	color: #314e52;
+	font-size: 35px;
+	text-align:left;
+	border-bottom: 5px solid #314e52;	
 }
