@@ -20,7 +20,10 @@
     <ul>
         <% products.forEach ( product => { %>
         <li><%= product.name %> <img src='<%= product.image %>'alt="circle" width="100px" height="100px">
-        <% }) %>
+            <form action="/products/<%= product._id %>/cart?_method=DELETE" method="POST">
+                <input type="submit" value="Delete" />
+            </form>
+            <% }) %>
     </ul>
 
 </body>
