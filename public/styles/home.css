@@ -19,7 +19,7 @@ h1 {
 	background-color: #e7e6e1;
 	color: #314e52;
 	font-size: 35px;
-	text-align:left;
+	text-align: left;
 	border-bottom: 5px solid #314e52;		
 }
 
@@ -28,6 +28,7 @@ a, div, p {
 	font-size: 20px;
 	padding: 10px;
 	text-decoration: none;
+	
 }
 
 input {
