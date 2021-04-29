@@ -90,7 +90,7 @@ app.get("/cart", function (request, response) {
 });
 
 //server bind//
-app.listen(process.env.PORT, function () {
+app.listen(PORT, function () {
     console.log(`Loading server from PORT ${PORT}!`)
 });
 
