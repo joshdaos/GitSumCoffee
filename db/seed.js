@@ -9,19 +9,19 @@ const products = [
 },
 {
     name: "Git Italian Roast",
-    image: "https://www.clearbags.com/media/catalog/product/cache/d43c9ecf208a5da92b3916d7b6b66fea/z/i/zipper-pouches-with-valves-zbgm2mbv-1.jpg",
+    image: "https://images.unsplash.com/photo-1548777384-87d81d8ada40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     description: "Masterfully balanced, slow roasted resulting in bold flavors.",
     price: 15.99
 },
 {
     name: "Git House Blend",
-    image: "https://www.clearbags.com/media/catalog/product/cache/d43c9ecf208a5da92b3916d7b6b66fea/z/i/zipper-pouches-with-valves-zbgm2mbv-1.jpg",
+    image: "https://images.unsplash.com/photo-1548777384-87d81d8ada40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     description: "Latin American blend to introduce you to our tasteful Git brand flavor.",
     price: 13.99
 },
 {
     name: "Git Lit Espresso",
-    image: "https://www.clearbags.com/media/catalog/product/cache/d43c9ecf208a5da92b3916d7b6b66fea/z/i/zipper-pouches-with-valves-zbgm2mbv-1.jpg",
+    image: "https://images.unsplash.com/photo-1548777384-87d81d8ada40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     description: "Are you looking for a good time? Try these espresso beans for a highly caffienated experience.",
     price: 21.99
 }
