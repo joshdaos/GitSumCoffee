@@ -20,12 +20,15 @@ h2 {
 	font-family: 'Nunito', sans-serif;
 	color: #314e52;
 	text-align:left;
+	margin: 30px;
 }
 
 a {
 	font-family: 'Nunito', sans-serif;
 	font-size: 18px;
 	padding: 10px;
+	text-decoration: none;
+	margin: 15px;
 }
 
 li {
@@ -42,4 +45,5 @@ h1 {
 	font-size: 35px;
 	text-align:left;
 	border-bottom: 5px solid #314e52;	
+	margin: 10px;
 }
