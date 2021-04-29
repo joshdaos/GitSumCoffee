@@ -76,7 +76,17 @@ response.redirect("/cart");
 // Delete Route
 // removing an item from cart (array)
 
-
+router.delete("/:productId/cart", async function(request,response){
+    try {
+    await db.User.findByIdAndUpdate(
+    request.session.currentUser.id, 
+    { $pull: { cart: request.params.productId } }
+);
+response.redirect("/cart");
+    } catch (err){
+        console.log(err);
+    }
+});
 
 
 
