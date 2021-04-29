@@ -25,3 +25,14 @@ li {
 	font-size: 15px;
 	list-style: none;
 }
+
+a {
+	color: #314e52;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+a:hover, input:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
