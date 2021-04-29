@@ -13,6 +13,7 @@ h1, h2 {
 	font-family: 'Dancing Script', cursive;
 	color: #314e52;
 	background-color: #e7e6e1;
+	border-bottom: 5px solid #314e52;
 }
 
 a, p, input, h3 {
