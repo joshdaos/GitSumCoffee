@@ -19,31 +19,40 @@ body {
 h2 {
 	font-family: 'Nunito', sans-serif;
 	color: #314e52;
-	text-align:left;
+	text-align: left;
 	margin: 30px;
+	padding:20px;
+	cursor: default;
 }
 
 a {
 	font-family: 'Nunito', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
+	color: #314e52;
 	padding: 10px;
 	text-decoration: none;
 	margin: 15px;
+}
+
+a:hover {
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 li {
 	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
 	list-style: none;
-	font-weight: bold;
+	color: #314e52;
 }
 
 h1 {
 	font-family: 'Dancing Script', cursive;
 	background-color: #e7e6e1;
 	color: #314e52;
-	font-size: 35px;
+	font-size: 30px;
 	text-align:left;
 	border-bottom: 5px solid #314e52;	
+	border-radius: 5px;
 	margin: 10px;
 }
