@@ -24,14 +24,15 @@ h2 {
 
 a {
 	font-family: 'Nunito', sans-serif;
-	font-size: 15px;
+	font-size: 18px;
 	padding: 10px;
 }
 
 li {
 	font-family: 'Nunito', sans-serif;
-	font-size: 15px;
+	font-size: 20px;
 	list-style: none;
+	font-weight: bold;
 }
 
 h1 {
