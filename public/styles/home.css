@@ -10,7 +10,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #f7f6e7;
+	background-image: url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29mZmVlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
 	text-align: center;
 }
 
@@ -31,10 +31,11 @@ a, div, p {
 	font-size: 20px;
 	padding: 10px;
 	text-decoration: none;
+	color: #f7f6e7;
 }
 
 a {
-	color: #314e52;
+	color: #f7f6e7;
 }
 
 a:hover {
@@ -43,6 +44,7 @@ a:hover {
 
 p {
 	font-size: 17px;
+	color: #f7f6e7;
 }
 
 input {
@@ -51,10 +53,12 @@ input {
 	border: 2px solid #314e52;
 	border-radius: 5px;
 	cursor: pointer;
+	
 }
 
 img {
-	box-shadow: 5px 5px 15px 5px #314e52;
+	/* box-shadow: 5px 5px 15px 5px #314e52; */
 	border-radius: 5px;
+	border: 20px solid white;
 }
 
