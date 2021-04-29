@@ -3,7 +3,7 @@ const bcrypt = require("bcryptjs");
 
 const products = [
     { name: "Git Las Hermanas",
-      image: "https://www.clearbags.com/media/catalog/product/cache/d43c9ecf208a5da92b3916d7b6b66fea/z/i/zipper-pouches-with-valves-zbgm2mbv-1.jpg",
+      image: "https://images.unsplash.com/photo-1548777384-87d81d8ada40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
       description: "Medium roast, fair trade certified. Satifsying creamy texture that delivers milk chocolate sweetness." ,
       price: 17.99
 },
