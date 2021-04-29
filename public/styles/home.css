@@ -33,9 +33,11 @@ a, div, p {
 input {
 	font-family: 'Nunito', sans-serif;
 	font-size: 15px;
+	border: 0px;
 }
 
 img {
 	box-shadow: 5px 5px 15px 5px #314e52;
 	border-radius: 5px;
 }
+
