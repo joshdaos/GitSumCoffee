@@ -12,12 +12,14 @@ body {
 h1, h2 {
 	font-family: 'Dancing Script', cursive;
 	color: #314e52;
-	background-color: #e7e6e1;
-	border-bottom: 5px solid #314e52;
+	cursor: default;
 }
 
 h1 {
 	text-align: left;
+	border-bottom: 5px solid #314e52;
+	background-color: #e7e6e1;
+	margin: 10px;
 }
 
 h2 {
@@ -28,7 +30,9 @@ h2 {
 p, input, h3 {
 	font-family: 'Nunito', sans-serif;
 	font-size: 18px;
+	cursor: default;
 }
+
 a {
 	font-family: 'Nunito', sans-serif;
 	color: #314e52;
@@ -36,8 +40,9 @@ a {
 	font-size: 18px;
 }
 
-a:hover {
+a:hover, input:hover {
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 img {
