@@ -1,15 +1,18 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	margin: 0;
 	padding: 0;
-	background-color: rgb(255, 211, 146);
+	background-color: #f7f6e7;
 	text-align: center;
 }
 
 h1, h2 {
 	font-family: 'Dancing Script', cursive;
+	color: #314e52;
+	background-color: #e7e6e1;
 }
 
 a, p, input, h3 {
