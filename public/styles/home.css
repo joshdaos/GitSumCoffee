@@ -21,6 +21,7 @@ h1 {
 	font-size: 35px;
 	text-align: left;
 	border-bottom: 5px solid #314e52;	
+	border-radius: 5px;
 	margin: 10px;	
 }
 
@@ -33,6 +34,10 @@ a, div, p {
 
 a {
 	color: #314e52;
+}
+
+p {
+	font-size: 17px;
 }
 
 input {
