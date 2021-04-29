@@ -26,6 +26,7 @@ h2 {
 	font-family: 'Nunito', sans-serif;
 	color: #314e52;
 	text-align:left;
+	padding:20px;
 }
 
 a, p, input {
@@ -40,8 +41,8 @@ li {
 	padding: 50px;
 	margin: 20px;
 	box-shadow: 5px 5px 15px 5px #314e52;
-
 	font-family: 'Nunito', sans-serif;
 	font-size: 15px;
 	list-style: none;
+	display: flex;
 }
