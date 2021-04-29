@@ -55,6 +55,7 @@ h1 {
 	border-bottom: 5px solid #314e52;	
 	border-radius: 5px;
 	margin: 10px;
+	cursor: default;
 }
 
 img {
