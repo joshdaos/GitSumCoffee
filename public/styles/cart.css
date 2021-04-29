@@ -29,7 +29,7 @@ h1 {
 
 h2 {
 	font-family: 'Nunito', sans-serif;
-	color: #FDE8CD;
+	color: #f7f6e7;
 	text-align:left;
 	padding:20px;
 }
@@ -45,7 +45,7 @@ li {
 	border: 5px solid #314e52;
 	padding: 50px;
 	margin: 20px;
-	box-shadow: 5px 5px 15px 5px #314e52;
+	box-shadow: 5px 5px 10px 5px black;
 	font-family: 'Nunito', sans-serif;
 	font-size: 15px;
 	list-style: none;
@@ -55,7 +55,7 @@ li {
 a {
 	font-family: 'Nunito', sans-serif;
 	font-size: 25px;
-	color: #FDE8CD;
+	color: #f7f6e7;
 	padding: 10px;
 	text-decoration: none;
 	margin: 15px;
@@ -64,4 +64,9 @@ a {
 a:hover {
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+img {
+	padding: 5px;
+	border: 3px solid #f7f6e7;
 }
