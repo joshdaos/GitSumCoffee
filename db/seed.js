@@ -2,26 +2,26 @@ const db = require("../models");
 const bcrypt = require("bcryptjs");
 
 const products = [
-    { name: "Git Las Hermanas",
-      image: "https://www.clearbags.com/media/catalog/product/cache/d43c9ecf208a5da92b3916d7b6b66fea/z/i/zipper-pouches-with-valves-zbgm2mbv-1.jpg",
+    { name: "For Loopin Cold Brew",
+      image: "https://www.grownupdish.com/wp-content/uploads/2018/08/Square-close-up-decaf-cold-brew.jpg",
       description: "Medium roast, fair trade certified. Satifsying creamy texture that delivers milk chocolate sweetness." ,
       price: 17.99
 },
 {
-    name: "Git Italian Roast",
-    image: "https://www.clearbags.com/media/catalog/product/cache/d43c9ecf208a5da92b3916d7b6b66fea/z/i/zipper-pouches-with-valves-zbgm2mbv-1.jpg",
+    name: "Algorithmic Roasted Latte",
+    image: "https://www.torani.com/sites/default/files/styles/torani_syrup_recipe_detail/public/recipes/illustration/Torani%20Latte.jpg?itok=jexRGteW",
     description: "Masterfully balanced, slow roasted resulting in bold flavors.",
     price: 15.99
 },
 {
-    name: "Git House Blend",
-    image: "https://www.clearbags.com/media/catalog/product/cache/d43c9ecf208a5da92b3916d7b6b66fea/z/i/zipper-pouches-with-valves-zbgm2mbv-1.jpg",
+    name: "Debuggin Mocha Frappe",
+    image: "https://www.whiskaffair.com/wp-content/uploads/2018/07/Nutella-Iced-Coffee-1-3-300x300.jpg",
     description: "Latin American blend to introduce you to our tasteful Git brand flavor.",
     price: 13.99
 },
 {
-    name: "Git Lit Espresso",
-    image: "https://www.clearbags.com/media/catalog/product/cache/d43c9ecf208a5da92b3916d7b6b66fea/z/i/zipper-pouches-with-valves-zbgm2mbv-1.jpg",
+    name: "Git Lit Cappuccino",
+    image: "https://lh3.googleusercontent.com/proxy/KG9iZasvMBuycobtDBSnenVLOIQcu-o2saVBIJhVdH546P-ZesTW8z9n-F7r1NUYYxHoeTtKuXBqkmvRM1CrsCZcvvSxxsO2-g7dqDh6DRzeg_h7_ApK-w",
     description: "Are you looking for a good time? Try these espresso beans for a highly caffienated experience.",
     price: 21.99
 }

@@ -13,11 +13,13 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	
+	background-color: #f7f6e7;
 }
 
 h1 {
 	font-family: 'Dancing Script', cursive;
+	color: #314e52;
+	background-color: #e7e6e1;
 }
 
 a {
