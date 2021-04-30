@@ -5,8 +5,13 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29mZmVlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
-	text-align: center;
+	background: linear-gradient(
+		rgba(7, 2, 2, 0.45), 
+		rgba(1140, 18, 10, 0.1)
+	  ), url('https://wallpaperaccess.com/full/2389927.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
 }
 
 h1, h2 {
@@ -16,12 +21,18 @@ h1, h2 {
 }
 
 h1 {
-	text-align: left;
-	border-bottom: 5px solid #314e52;
+	font-family: 'Dancing Script', cursive;
 	background-color: #f7f6e7;
 	color: #025955;
-	margin: 10px;
+	font-size: 30px;
+	text-align: left;
+	border-bottom: 5px solid #314e52;	
 	border-radius: 5px;
+	margin: 10px;
+	padding-inline: 10px;
+	cursor: default;
+	display: inline;
+	margin-right: auto;
 	
 }
 
@@ -29,6 +40,7 @@ h2 {
 	text-align: center;
 	font-size: 26px;
 	color: #f7f6e7;
+	text-align: center;
 }
 
 
@@ -37,10 +49,16 @@ p,h3 {
 	font-size: 18px;
 	cursor: default;
 	color: #f7f6e7;
+	text-align: center;
 }
 
 input {
 	color: #025955;
+	text-align: center;
+}
+
+form {
+	text-align: center;
 }
 
 a {
@@ -49,7 +67,9 @@ a {
 	color: #f7f6e7;
 	padding: 10px;
 	text-decoration: none;
-	margin: 15px;
+	font-size: 18px;
+	text-align: center;
+	margin: 10px;
 }
 
 a:hover, input:hover {
@@ -58,7 +78,8 @@ a:hover, input:hover {
 }
 
 img {
-	border-radius: 10px;
+	border-radius: 5px;
+	text-align: center;
 }
 
 li {
@@ -66,6 +87,7 @@ li {
 	font-size: 15px;
 	list-style: none;
 	color: #f7f6e7;
+	text-align: center;
 }
 
 input {

@@ -18,8 +18,10 @@
     <h2>Best Sellers</h2>
 </br>
 
+<div>
     <a href="/">Home</a>
     <a href="/cart">View Cart</a>
+</div>
 
     <ul>
         <% products.forEach ( product => { %>
@@ -27,7 +29,7 @@
         </br>
         <li><%= product.name %> </br> <img src='<%= product.image %>'alt="circle" width="250px" height="250px">
         </br>
-            <a href="/products/<%= product._id %>">View Product Info</a></li>
+            <a href="/products/<%= product._id %>">Quick View</a></li>
         <% }) %>
     </ul>
 
