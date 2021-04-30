@@ -24,6 +24,30 @@ const products = [
     image: "https://images.unsplash.com/photo-1548777384-87d81d8ada40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     description: "Are you looking for a good time? Try these espresso beans for a highly caffienated experience.",
     price: 21.99
+},
+{
+    name: "French Roast",
+    image: "https://images.unsplash.com/photo-1548777384-87d81d8ada40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+    description: "Powerful, rich coffee with smoky burnt caramel overtones.",
+    price: 13.99
+},
+{
+    name: "Guatemalan Mocha Java",
+    image: "https://images.unsplash.com/photo-1548777384-87d81d8ada40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+    description: "From the best Antigua farm with a rich, refined cocao dark roast taste,",
+    price: 14.99
+},
+{
+    name: "Cafe Sumatra",
+    image: "https://images.unsplash.com/photo-1548777384-87d81d8ada40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+    description: "With a earthy caramel full body taste, and pleasant herbal dark roast approach.",
+    price: "18.99"
+},
+{
+    name: "Organic Morning Blend",
+    image: "https://images.unsplash.com/photo-1548777384-87d81d8ada40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+    description: "A lively, awakening taste for a nice, smooth transition into the beginning of your day.",
+    price: "17.99"
 }
 ];
 
