@@ -44,7 +44,7 @@ h2 {
 }
 
 
-p, input, h3 {
+p,h3 {
 	font-family: 'Nunito', sans-serif;
 	font-size: 18px;
 	cursor: default;
@@ -63,7 +63,9 @@ form {
 
 a {
 	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
 	color: #f7f6e7;
+	padding: 10px;
 	text-decoration: none;
 	font-size: 18px;
 	text-align: center;
@@ -85,5 +87,14 @@ li {
 	font-size: 15px;
 	list-style: none;
 	color: #f7f6e7;
+	text-align: center;
+}
+
+input {
+	font-family: 'Nunito', sans-serif;
+	font-size: 15px;
+	border: 5px solid #314e52;
+	border-radius: 5px;
+	cursor: pointer;
 	text-align: center;
 }
