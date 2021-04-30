@@ -10,8 +10,8 @@ e7e6e1 - gray
 }
 
 body {
-	/* margin: 0; */
-	/* padding: 0; */
+	margin: 0;
+	padding: 0;
 	background: linear-gradient(
 		rgba(60, 20, 20, 0.45), 
 		rgba(1140, 18, 10, 0.1)
@@ -48,7 +48,7 @@ a:hover {
 
 li {
 	font-family: 'Nunito', sans-serif;
-	font-size: 20px;
+	font-size: 23px;
 	list-style: none;
 	text-align: center;
 	color: #f7f6e7;
