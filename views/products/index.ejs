@@ -23,14 +23,13 @@
     <a href="/cart">View Cart</a>
 </div>
 
-<h3>Hand roasted to order</h3>
     <ul>
         <% products.forEach ( product => { %>
         </br>
         </br>
         <li><%= product.name %> </br> <img src='<%= product.image %>'alt="circle" width="250px" height="250px">
         </br>
-            <a href="/products/<%= product._id %>">View Product Info</a></li>
+            <a href="/products/<%= product._id %>">Quick View</a></li>
         <% }) %>
     </ul>
 

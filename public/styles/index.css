@@ -61,6 +61,7 @@ a:hover {
 	cursor: pointer;
 }
 
+
 li {
 	font-family: 'Nunito', sans-serif;
 	font-size: 23px;
@@ -68,13 +69,16 @@ li {
 	text-align: center;
 	color: #f7f6e7;
 	cursor: default;
+	float: left;
+	display: inline; 
+	margin: 5px;
 }
 
 h1 {
 	font-family: 'Dancing Script', cursive;
 	background-color: #f7f6e7;
 	color: #025955;
-	font-size: 40px;
+	font-size: 30px;
 	text-align: left;
 	border-bottom: 5px solid #314e52;	
 	border-radius: 5px;
