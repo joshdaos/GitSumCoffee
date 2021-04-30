@@ -71,7 +71,7 @@ li {
 	cursor: default;
 	float: left;
 	display: inline; 
-	margin: 5px;
+	margin: 30px;
 }
 
 h1 {
@@ -88,8 +88,12 @@ h1 {
 	cursor: default;
 	display: inline;
 	margin-right: auto;
+	display: flex;
+  	justify-content: flex-start;
+  	flex-wrap: wrap;
 }
 
 img {
 	border-radius: 5px;
 }
+

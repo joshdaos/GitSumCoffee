@@ -67,6 +67,10 @@ p {
 	color: #f7f6e7;
 }
 
+div {
+	text-align: center;
+}
+
 form { 
 	text-align: center;
 	font-size: 25px;
@@ -113,8 +117,16 @@ section {
 
 .josh {
 	text-align: left;
+	float: left;
+	display: inline;
 }
 
 .lesley {
 	text-align: left;
+	float: left;
+	display: inline;
+}
+
+h4 {
+	text-align: center;
 }
