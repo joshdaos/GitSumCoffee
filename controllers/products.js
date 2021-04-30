@@ -14,7 +14,7 @@ const db = require("../models");
  * Edit - GET - /authors/:id/edit  - Presentational Form - respond with a form prefilled with author data
  * Update - PUT - /authors/:id  - Functional - recieve data from edit to update a specific author
  * Delete - DELETE - /authors/:id  - Functional - Deletes author by id from request
- */
+*/
 
 
 // Index Best Selling Coffee Route
@@ -87,6 +87,7 @@ response.redirect("/cart");
         console.log(err);
     }
 });
+
 
 
 
