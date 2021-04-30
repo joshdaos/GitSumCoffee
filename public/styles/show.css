@@ -18,13 +18,16 @@ h1, h2 {
 h1 {
 	text-align: left;
 	border-bottom: 5px solid #314e52;
-	background-color: #e7e6e1;
+	background-color: #f7f6e7;
+	color: #025955;
 	margin: 10px;
 	border-radius: 5px;
+	
 }
 
 h2 {
 	text-align: center;
+	font-size: 26px;
 	color: #f7f6e7;
 }
 
@@ -34,6 +37,10 @@ p,h3 {
 	font-size: 18px;
 	cursor: default;
 	color: #f7f6e7;
+}
+
+input {
+	color: #025955;
 }
 
 a {
