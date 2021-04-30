@@ -24,11 +24,21 @@ body {
 
 h2 {
 	font-family: 'Nunito', sans-serif;
+	font-size: 28px;
 	color: #f7f6e7;
 	text-align: left;
 	margin: 15px;
 	padding:20px;
 	cursor: default;
+}
+
+h3 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 28px;
+	color: #f7f6e7;
+	text-align: center;
+	cursor: default;
+	
 }
 
 a {
@@ -43,6 +53,7 @@ a {
 
 div {
 	text-align: center;
+	color: #025955;
 }
 
 a:hover {
