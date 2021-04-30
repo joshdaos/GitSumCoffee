@@ -73,7 +73,7 @@ form {
 }
 
 
-div {
+.images {
 	text-align: center;
 }
 
@@ -108,4 +108,12 @@ img {
 section {
 	font-weight: 700;
 	text-align: center;
+}
+
+.josh {
+	text-align: left;
+}
+
+.lesley {
+	text-align: left;
 }
