@@ -16,6 +16,7 @@
 <body>
     <h1>GitSumCoffee</h1>
     <a href="/products/bestsellers">Best Sellers</a>
+    <a href="/cart">View Cart</a>
 
     <div>
     <h2> <%= product.name %> </h2>
@@ -23,6 +24,7 @@
     <p> <%= product.description %> </p>
     <h3>$<%= product.price %> </h3>
     </div>
+
     
     <form action="/products/<%= product._id %>/cart?_method=PUT" method="POST">
         <input type="submit" value="Add to Cart" />
