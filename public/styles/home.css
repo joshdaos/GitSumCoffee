@@ -63,7 +63,7 @@ a:hover {
 }
 
 p {
-	background: rgba(45, 44, 44, 0.7);
+	background-color: rgba(0, 0, 0, 0.3);
 	position: inherit; 
 	font-size: 18px;
 	font-family: 'Nunito', sans-serif;
@@ -95,6 +95,11 @@ input {
 	padding: 12px;
 	background: transparent;
 	
+}
+
+input:hover {
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .big-img {
