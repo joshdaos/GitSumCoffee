@@ -47,15 +47,21 @@ h2 {
 
 p,h3 {
 	font-family: 'Nunito', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	cursor: default;
 	color: #f7f6e7;
 	text-align: center;
 }
 
 input {
-	color: #025955;
+	color: #f7f6e7;
+	font-size: 15px;
+	border: 2px solid #f7f6e7;
+	border-radius: 5px;
+	cursor: pointer;
 	text-align: center;
+	padding: 12px;
+	background: transparent;
 }
 
 form {
@@ -91,11 +97,4 @@ li {
 	text-align: center;
 }
 
-input {
-	font-family: 'Nunito', sans-serif;
-	font-size: 15px;
-	border: 5px solid #314e52;
-	border-radius: 5px;
-	cursor: pointer;
-	text-align: center;
-}
+
