@@ -8,14 +8,14 @@ body {
 	background: linear-gradient(
 		rgba(7, 2, 2, 0.45), 
 		rgba(1140, 18, 10, 0.1)
-	  ), url('https://wallpaperaccess.com/full/2389927.jpg');
+	  ), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover; 
 	min-height: 99vh;
 }
 
-h1, h2 {
+h2 {
 	font-family: 'Dancing Script', cursive;
 	color: #314e52;
 	cursor: default;
@@ -23,11 +23,11 @@ h1, h2 {
 
 h1 {
 	font-family: 'Dancing Script', cursive;
-	background-color: #f7f6e7;
-	color: #025955;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-bottom: 5px solid #f7f6e7;	
+	color: #f7f6e7;
 	font-size: 30px;
-	text-align: left;
-	border-bottom: 5px solid #314e52;	
+	text-align: left;	
 	border-radius: 5px;
 	margin: 10px;
 	padding-inline: 10px;

@@ -9,7 +9,7 @@ body {
 	background: linear-gradient(
 		rgba(60, 20, 20, 0.45), 
 		rgba(1140, 18, 10, 0.1)
-	  ), url('https://images.unsplash.com/photo-1529892485617-25f63cd7b1e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+	  ), url('https://images.unsplash.com/photo-1523063308874-cecc260a3171?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjUwfHxjb2ZmZSUyMGJlYW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -19,9 +19,9 @@ body {
 
 h1 {
 	font-family: 'Dancing Script', cursive;
-	color: #025955;
-	background-color: #f7f6e7;
-	border-bottom: 5px solid #025955;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-bottom: 5px solid #f7f6e7;	
+	color: #f7f6e7;
 	text-align:left;
 	margin: 10px;
 	border-radius: 5px;

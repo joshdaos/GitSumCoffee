@@ -4,30 +4,35 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #f7f6e7;
 	text-align: center;
+	background: linear-gradient(
+		rgba(7, 2, 2, 0.45), 
+		rgba(1140, 18, 10, 0.1)
+	  ), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	min-height: 99vh;
 }
 
-h1, h2 {
-	font-family: 'Dancing Script', cursive;
-	background-color: #f7f6e7;
-	color: #025955;
-	border-bottom: 5px solid #314e52;
-}
+
 
 h1 {
+	font-family: 'Nunito', sans-serif;
 	text-align: left;
 	margin: 10px;
 	border-radius: 5px;
-}
-
-a, p, input {
-	font-family: 'Nunito', sans-serif;
-	font-size: 15px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-bottom: 5px solid #f7f6e7;	
+	color: #f7f6e7;
 }
 
 input {
-	color: #025955;
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+	color: #f7f6e7;
+	border: 2px solid #f7f6e7;
+	background: transparent;
 }
 
 li {
@@ -39,9 +44,9 @@ li {
 
 
 a {
-	color: #314e52;
+	color: #f7f6e7;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 a:hover, input:hover {
