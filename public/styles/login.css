@@ -33,6 +33,7 @@ input {
 	color: #f7f6e7;
 	border: 2px solid #f7f6e7;
 	background: transparent;
+	border-radius: 5px;
 }
 
 li {

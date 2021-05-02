@@ -34,6 +34,7 @@ input {
 	border: 2px solid #f7f6e7;
 	background: transparent;
 	padding: 5px;
+	border-radius: 5px;
 }
 
 li {
