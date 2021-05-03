@@ -89,8 +89,22 @@ h1 {
 	display: inline;
 	margin-right: auto;
 	display: flex;
-  	justify-content: flex-start;
   	flex-wrap: wrap;
+}
+
+.horizontal-display {
+	display: table;
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 690px;
+	list-style: none;
+
+}
+
+ul#horizontal-list li {
+	display: inline;
 }
 
 img {
