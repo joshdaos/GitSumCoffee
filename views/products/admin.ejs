@@ -9,18 +9,27 @@
 </head>
 <body>
     
-<h1>Where we can delete products from our database</h1>
+<h1>Remove Products from Database</h1>
+<div>
 <a href="/">Home</a>
-<a href="/products/bestsellers">Best Sellers</a>
+<a href="/products/bestsellers  ">Best Sellers</a>
+</div>
 
-<ul>
+<div id="products">
+    <div class="horizontal-display">
+<ul id="horizontal-list">
     <% products.forEach ( product => { %>
+    </br>
+    </br>
     <li><%= product.name %> <img src='<%= product.image %>'alt="circle" width="300px" height="300px">
+    </br>
         <form action="/products/<%= product._id %>?_method=DELETE" method="POST">
 			<input type="submit" value="Delete" />
 		</form>
     <% }) %>
 </ul>
+    </div>
+</div>
 
 
 

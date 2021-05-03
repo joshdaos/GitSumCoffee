@@ -5,7 +5,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	/* background-color: #FDE8CD; */
 	background: linear-gradient(
 		rgba(60, 20, 20, 0.45), 
 		rgba(1140, 18, 10, 0.1)
@@ -14,7 +13,6 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 99vh;
-	text-align: center;
 }
 
 h1 {
@@ -37,6 +35,10 @@ a {
 	margin: 15px;
 }
 
+div {
+	text-align: center;
+}
+
 a:hover {
 	text-decoration: underline;
 	cursor: pointer;
@@ -49,4 +51,30 @@ li {
 	text-align: center;
 	color: #f7f6e7;
 	cursor: default;
+	float: left;
+	display: inline; 
+	margin: 30px;
+}
+
+.horizontal-display {
+	display: table;
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 690px;
+	list-style: none;
+
+}
+
+ul#horizontal-list li {
+	display: inline;
+}
+
+img {
+	border-radius: 5px;
+}
+
+input {
+	text-align: center;
 }
