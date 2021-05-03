@@ -29,7 +29,12 @@ https://joshdaos986755.invisionapp.com/freehand/Project1-userflows-XZDtkNzf2
 # WireFrame:
 https://lesleysauter291576.invisionapp.com/freehand/Freehand-Project-One-yTOqbGL23?frame-cb=1619223319359
 
+# Code Snippets:
+Snippet 1. https://imgur.com/l7v8miT
 
+Snippet 2. https://imgur.com/u4lkZsM
+
+Snippet 3. https://imgur.com/afN1ZjY
 
 # MVP
 reverse engineering website: https://www.peets.com/
@@ -50,14 +55,14 @@ Bonus features:
 - review selected coffee product and rate with stars
 
 ## Full Crud Functionality:
-C - creating an account 
-R - view selected coffee from best seller's page
-U - Update the quantity of items in cart
-D - Remove product from the admin url
+- C - creating an account 
+- R - view selected coffee from best seller's page
+- U - Update the quantity of items in cart
+- D - Remove product from the admin url
 
 ## Routes:
-Post - adding to cart and adding an account by signing up
-Put - updating quantity of product and removing items from cart
-Delete - admin deletes product items from admin url
-Show - user can view selected product items
+- Post - adding to cart and adding an account by signing up
+- Put - updating quantity of product and removing items from cart
+- Delete - admin deletes product items from admin url
+- Show - user can view selected product items
 
