@@ -26,7 +26,7 @@ h1 {
 	border-bottom: 5px solid #f7f6e7;	
 	color: #f7f6e7;
 }
-
+ 
 input {
 	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
@@ -35,14 +35,6 @@ input {
 	background: transparent;
 	border-radius: 5px;
 }
-
-li {
-	font-family: 'Nunito', sans-serif;
-	font-size: 15px;
-	list-style: none;
-	color: #f7f6e7;
-}
-
 
 a {
 	font-family: 'Nunito', sans-serif;

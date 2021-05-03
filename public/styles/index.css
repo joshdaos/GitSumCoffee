@@ -109,6 +109,14 @@ ul#horizontal-list li {
 
 img {
 	border-radius: 5px;
-
 }
 
+p {
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #f7f6e7;
+	padding: 10px;
+	margin: 10px 50px 10px 50px;
+	text-align: center;
+	border-radius: 10px;
+}
