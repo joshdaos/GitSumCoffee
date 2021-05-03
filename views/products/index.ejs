@@ -23,17 +23,20 @@
     <a href="/cart">View Cart</a>
 </div>
 
-    
-    <ul>
+    <div id="products">
+        <div class="horizontal-display">
+    <ul id="horizontal-list">
         <% products.forEach ( product => { %>
         </br>
         </br>
-        <li><%= product.name %> </br> <img src='<%= product.image %>'alt="circle" width="250px" height="250px">
+        <li><strong><%= product.name %> </strong></br> <img src='<%= product.image %>'alt="circle" width="250px" height="250px">
         </br>
             <a href="/products/<%= product._id %>">Quick View</a></li>
             
         <% }) %>
     </ul>
+        </div>
+    </div>
 
 
 </body>
