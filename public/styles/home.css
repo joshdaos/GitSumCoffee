@@ -107,6 +107,11 @@ img {
 section {
 	font-weight: 700;
 	text-align: center;
+	margin: 50px;
+}
+
+p {
+	border-radius: 20px;
 }
 
 .josh {

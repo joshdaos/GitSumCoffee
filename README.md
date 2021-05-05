@@ -1,5 +1,5 @@
 # GitSumCoffee
-
+![GitSumCoffee](https://imgur.com/6rOohoK.jpg)
 # User Stories:
 
 ## Login Page:
