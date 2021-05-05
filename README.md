@@ -1,5 +1,5 @@
 # GitSumCoffee
-
+![GitSumCoffee](https://imgur.com/6rOohoK.jpg)
 # User Stories:
 
 ## Login Page:
@@ -24,10 +24,10 @@
 4. The coffee has a list of ratings (out of 5).
 
 # Userflow: 
-https://joshdaos986755.invisionapp.com/freehand/Project1-userflows-XZDtkNzf2
+![User Flow](https://imgur.com/PE4DP4p.jpg)
 
 # WireFrame:
-https://lesleysauter291576.invisionapp.com/freehand/Freehand-Project-One-yTOqbGL23?frame-cb=1619223319359
+![Wireframe](https://imgur.com/R97II8S.jpg)
 
 # Code Snippets:
 Snippet 1. https://imgur.com/l7v8miT
