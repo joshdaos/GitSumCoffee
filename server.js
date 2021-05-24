@@ -60,7 +60,7 @@ app.use("/", controllers.auth);
 
 //Home page route
 app.get("/", function (request, response){
-    response.render("Home");
+    response.render("home");
 });
 
 //Admin route
