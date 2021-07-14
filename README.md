@@ -1,4 +1,7 @@
 # GitSumCoffee
+
+Click [Here](https://gitsumcoffee.herokuapp.com/) for a demo!
+
 ![GitSumCoffee](https://imgur.com/6rOohoK.jpg)
 # User Stories:
 
