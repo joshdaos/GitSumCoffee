@@ -1,131 +1,48 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
 * {
 	box-sizing: border-box;
 }
+
 body {
-	margin: 0;
+	/* margin: 0;
 	padding: 0;
-	background: linear-gradient(
-		rgba(7, 2, 2, 0.45), 
-		rgba(1140, 18, 10, 0.1)
-	  ), url('https://images.unsplash.com/photo-1513528916469-746b1cf609e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover; 
+	background-size: cover;  */
+	background-color: #353535;
 }
 
-h1 {
-	font-family: 'Dancing Script', cursive;
-	background-color: rgba(0, 0, 0, 0.3);
-	border-bottom: 5px solid #f7f6e7;	
-	color: #f7f6e7;
-	font-size: 40px;
-	border-radius: 5px;
-	margin: 10px;
-	padding: 10px;
-	cursor: default;
-	display: inline;
-	margin-right: auto;
+#navbar {
+	background-color: rgb(247, 220, 131);
+	color: white;
+	height: 20px;
 }
 
-.h1{
-	text-align: left;
-}
-
-a, div, p {
-	font-family: 'Nunito', sans-serif;
-	font-size: 20px;
-	padding: 10px;
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+  }
+  
+  li {
+	float: left;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
 	text-decoration: none;
-	color: #f7f6e7;
-}
-
-a {
-	font-size: 25px;
-	color: #f7f6e7;
-	text-align: center;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-p {
-	background-color: rgba(0, 0, 0, 0.3);
-	position: inherit; 
-	font-size: 18px;
-	font-family: 'Nunito', sans-serif;
-	color: #f7f6e7;
-}
-
-div {
-	text-align: center;
-}
-
-form { 
-	text-align: center;
-	font-size: 25px;
-}
-
-
-.images {
-	text-align: center;
-}
-
-input {
-	font-family: 'Nunito', sans-serif;
-	color: #f7f6e7;
-	font-size: 15px;
-	border: 2px solid #f7f6e7;
-	border-radius: 5px;
-	cursor: pointer;
-	text-align: center;
-	padding: 12px;
-	background: transparent;
-}
-
-input:hover {
-	text-decoration: underline;
-	cursor: pointer;
-}
-
-.big-img {
-	border-radius: 5px;
-	border: 20px solid #f7f6e7;
-	display: block; 
-  	margin-left: auto; 
-  	margin-right: auto;
-}
-
-img {
-	padding: 5px;
-	border: 3px solid #f7f6e7;
-}
-
-section {
-	font-weight: 700;
-	text-align: center;
-	margin: 50px;
-}
-
-p {
-	border-radius: 20px;
-}
-
-.josh {
-	text-align: left;
-	float: left;
-	display: inline;
-}
-
-.lesley {
-	text-align: left;
-	float: left;
-	display: inline;
-}
-
-h4 {
-	text-align: center;
-}
+  }
+  
+  li a:hover:not(.active) {
+	background-color: #111;
+  }
+  
+  /* .active {
+	background-color: #04AA6D;
+  } */

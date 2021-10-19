@@ -11,79 +11,87 @@
         
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
+        @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
         </style>
     <title>Home</title>
 </head>
 <body>
-    <div class="h1">
-    <h1>GitSumCoffee</h1>
-    </div>
+    <nav id="navbar" class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                GitSumCoffee
+            </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="/" class="navbar-item">
+              Home
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  About
+                </a>
+                <a class="navbar-item">
+                  Coffee
+                </a>
+                <a class="navbar-item">
+                  Contact
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <form action="/login" method=POST>
+                    <input class="navbar-item" type="hidden" name="email" value="guestuser">
+                    <input class="navbar-item" type="hidden" name="password" value="test1234">
+                    <input class="navbar-item"type="submit" value="Guest">
+                </form>
+                <a href="/signup" class="navbar-item">
+                  <strong>Sign up</strong>
+                </a>
+                <a href="/login" class="navbar-item">
+                    Login
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-    <div class="navlinks">
-    <a href="/login">Login</a> 
-    <a href="/signup">Sign Up</a>
-    </div>
-    
-    <div class="lofi">
-        <a href="https://www.youtube.com/watch?v=-5KAN9_CzSA" class="share__icon--youtube">
-        <i class="fab fa-youtube"></i>
-    </a>
-    </div>
-
-    <form action="/login" method=POST>
-    <input type="hidden" name="email" value="guestuser">
-    <input type="hidden" name="password" value="test1234">
-    <input type="submit" value="Continue as Guest">
-    </form>
-
-    <div class="images">
-        <img src='https://media.giphy.com/media/vja3eL2uSMKWs/giphy.gif' alt="coffee" width="250px" height="150px">
-        <img src='https://media.giphy.com/media/12OZlHgyEZZHRm/giphy.gif' alt="coffee" width="250px" height="150px">
-        <img src='https://media.giphy.com/media/9uIxmnknkXCDzNF0HY/giphy.gif' alt="coffee" width="250px" height="150px">
-    </div>
-
-</br>
-</br>
-    <img class='big-img'src="https://www.goodfreephotos.com/cache/food/food297.jpg" 
-    alt="french press" width="600px" height="400px">
-
-
-</br>
-</br>
-    <section>
-        <p>
-            In 2021, GitSumCoffee was founded by Joshua Daos and Lesley Sauter.<br>
-            From long nights and days at GA a vision was birthed to stay awake during our cohort. <br>
-            In order stay energized through extensive lectures, our peers need to stay caffeinated!<br>
-            GitSumCoffee was made in order to supply our daily needs to our students.
-        </p>
-    </section>
-
-    <div class="josh">
-        <h4>Josh:</h4>
-    <a href="https://www.linkedin.com/in/joshua-daos/" class="share__icon--linkedin">
-        <i class="fab fa-linkedin"></i>
-    </a>
-
-    <a href="https://git.generalassemb.ly/joshdaos" class="share__icon--github">
-        <i class="fab fa-github"></i>
-    </a>
-    
-    </div>
-
-    <div class="lesley">
-        <h4>Lesley:</h4>
-    <a href="https://www.linkedin.com/in/lesley-sauter-45372437/" class="share__icon--linkedin">
-        <i class="fab fa-linkedin"></i>
-    </a>
-
-    <a href="https://git.generalassemb.ly/lesleysauter" class="share__icon--github">
-        <i class="fab fa-github"></i>
-    </a>
-    </div>
-
-
-
+      <ul>
+        <li><a href="/">GitSumCoffee</a></li>
+        <li><a  href="/products/bestsellers">Coffee</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float:right">
+        <form action="/login" method=POST>
+            <input type="hidden" name="email" value="guestuser">
+            <input type="hidden" name="password" value="test1234">
+            <input type="submit" value="Guest">
+        </form>
+        </li>
+        <li style="float:right"><a class="active" href="/signup">Signup</a></li>
+        <li style="float:right"><a class="active" href="/login">Login</a></li>
+      </ul>
 
 </body>
 </html>
